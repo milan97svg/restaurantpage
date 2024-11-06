@@ -4,8 +4,8 @@ const createAboutPage = () => {
     pageContent.classList.add("page-content")
 
     const heading = document.createElement("h1");
-    heading.classList.add("heading");
-    heading.innerText = "About Us"
+    heading.classList.add("aboutheading");
+    heading.innerText = "ENJOY AN EXCEPTIONAL JOURNEY OF TASTE"
     pageContent.appendChild(heading)
 
     const about = document.createElement("p")

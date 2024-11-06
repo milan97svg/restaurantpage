@@ -3,20 +3,18 @@ const createHomePage = () => {
     const pageContent = document.createElement("div");
     pageContent.classList.add("page-content")
 
-    const image = document.createElement("img");
-    image.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Jacks_logo_2018.svg/1200px-Jacks_logo_2018.svg.png"
-    image.height = 200;
-    pageContent.appendChild(image);
+    const image = document.createElement("div");
+    image.classList.add("homeimage")
+    const heading = document.createElement("h1");
+    heading.classList.add("homeheading");
+    heading.innerText = "ITS TIME TO ENJOY THE FINER THINGS IN LIFE";
+    image.appendChild(heading);
+    pageContent.appendChild(image)
 
-    const headLine = document.createElement("h1");
-    headLine.classList.add("heading");
-    headLine.innerText = "Welcome to our restaurant";
-    pageContent.appendChild(headLine)
-
-    const copy = document.createElement("p");
-    copy.classList.add("copy");
-    copy.innerText = "We serve the best food in town. Come and taste it."
-    pageContent.appendChild(copy);
+    const button = document.createElement("button");
+    button.classList.add("homebutton");
+    button.innerText = "Discover our Menu";
+    heading.appendChild(button);
 
     content.appendChild(pageContent);
 }

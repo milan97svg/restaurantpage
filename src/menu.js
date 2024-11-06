@@ -8,6 +8,8 @@ const createMenuPage = () => {
     heading.innerText = "Our Menu"
     pageContent.appendChild(heading)
 
+    
+
     content.appendChild(pageContent)
 }
 
